@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [Suite]" guice-stage="DEVELOPMENT">
+  <listeners>
+    <listener class-name="com.qa.utilities.Report"/>
+  </listeners>
+  <test thread-count="5" name="Test(failed)">
+    <parameter name="Url" value="https://www.cleartrip.com/"/>
+    <parameter name="Browser" value="Chrome"/>
+    <classes>
+      <class name="com.qa.testscript.TC_Cleartrip">
+        <methods>
+          <include name="ClearTripRegister" invocation-numbers="0 1"/>
+          <include name="SetUp"/>
+          <include name="TearDown"/>
+        </methods>
+      </class> <!-- com.qa.testscript.TC_Cleartrip -->
+    </classes>
+  </test> <!-- Test(failed) -->
+</suite> <!-- Failed suite [Suite] -->
