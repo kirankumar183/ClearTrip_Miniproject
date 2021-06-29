@@ -57,7 +57,7 @@ public class TC_Cleartrip extends TestBase {
 		@DataProvider
 		public String[][] getData() throws IOException
 		{
-			String xFile = "C:\\Users\\chan\\eclipse-workspace\\Virtusa_Miniproject\\conf\\TestData1.xlsx";
+			String xFile = "C:\\Users\\chan\\eclipse-workspace\\ClearTrip_Miniproject\\conf\\TestData1.xlsx";
 			String xSheet="Sheet1";
 			int rowCount=Excelutility.getrowcount(xFile, xSheet);
 			int cellCount =Excelutility.getcellcount(xFile, xSheet, rowCount);

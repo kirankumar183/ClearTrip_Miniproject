@@ -29,13 +29,13 @@ public class TestBase {
 	{
 		if(Browser.equalsIgnoreCase("Chrome"))
 		{
-		System.setProperty("webdriver.chrome.driver", "C:\\Users\\chan\\eclipse-workspace\\Virtusa_Miniproject\\conf\\chromedriver.exe");
+		System.setProperty("webdriver.chrome.driver", "C:\\Users\\chan\\eclipse-workspace\\ClearTrip_Miniproject\\conf\\chromedriver.exe");
 		driver=new ChromeDriver();
 		
 		}
-		else if(Browser.equalsIgnoreCase("edge"))
+		else if(Browser.equalsIgnoreCase("Firefox"))
 		{
-		System.setProperty("webdriver.gecko.driver", "C:\\Users\\chan\\eclipse-workspace\\Virtusa_Miniproject\\conf\\chromedriver.exe");
+		System.setProperty("webdriver.gecko.driver", "C:\\Users\\chan\\eclipse-workspace\\ClearTrip_Miniproject\\conf\\geckodriver.exe");
 		driver=new FirefoxDriver();
 		} 
 			Cleartrip=new Cleartrip_pages (driver);
